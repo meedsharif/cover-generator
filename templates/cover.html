@@ -5,10 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<!-- <link rel="stylesheet" href="style.css" /> -->
-		<title>Document</title>
+		<title>Cover Page</title>
 	</head>
 	<body>
 		<style>
+			@page {
+				size: A4; /* Change from the default size of A4 */
+				margin: 2.5cm; /* Set margin on each page */
+			}
 			.top-sec {
 				margin-top: 1rem;
 			}
@@ -37,8 +41,8 @@
 		</style>
 		<br>
 		<section class="top-sec" style="text-align: center; margin-top: 20px;font-size: 20px;">
-			<h3>{{ subject }} LAB REPORT</h3>
 			<h3>International Islamic University Chittagong</h3>
+			<h3>{{ subject }} LAB REPORT</h3>
 			<h3>Department of Computer Science and Engineering</h3>
 		</section>
 		<br>
