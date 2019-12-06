@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- <link rel="stylesheet" href="style.css" /> -->
+		<title>Document</title>
+	</head>
+	<body>
+		<style>
+			.top-sec {
+				margin-top: 1rem;
+			}
+			td {
+				padding: 5px;
+				font-size: 18px;
+			}	
+			.exp-table td:first-child{
+				width: 40%;
+			}
+			h4 {
+				font-size: 20px;
+			}
+			h3 {
+				font-size: 26px;
+			}
+
+			table {
+				width: 100%;
+			}
+
+			table, th, td {
+				border: 1px solid black;
+			}
+			
+		</style>
+		<br>
+		<section class="top-sec" style="text-align: center; margin-top: 20px;font-size: 20px;">
+			<h3>{{ subject }} LAB REPORT</h3>
+			<h3>International Islamic University Chittagong</h3>
+			<h3>Department of Computer Science and Engineering</h3>
+		</section>
+		<br>
+		<section class="exp-table" style="margin: 0 auto;">
+			<table border="1" style="border-collapse: collapse;">
+				<tr>
+					<td>Student ID:</td>
+					<td>{{ id }}</td>
+				</tr>
+				<tr>
+					<td>Student Name:</td>
+					<td>{{ name }}</td>
+				</tr>
+				<tr>
+					<td>Semester:</td>
+					<td>{{ semester }}</td>
+				</tr>
+				<tr>
+					<td>Section:</td>
+					<td>{{ section }}</td>
+				</tr>
+			</table>
+		</section>
+		<h4 style="">Experiment Information: </h4>
+		<section class="exp-table" style="margin: 0 auto;">
+			<table border="1" style="border-collapse: collapse;" width="80%">
+				<tr>
+					<td>Experiment No:</td>
+					<td>{{ exp_no }}</td>
+				</tr>
+				<tr>
+					<td>Experiment Name:</td>
+					<td>{{ exp_name }}</td>
+				</tr>
+				<tr>
+					<td>Course Code:</td>
+					<td>{{ course_code }}</td>
+				</tr>
+				<tr>
+					<td>Course Name:</td>
+					<td>{{ course_name }}</td>
+				</tr>
+				<tr>
+					<td>Date of Experiment:</td>
+					<td>{{ date_of_exp }}</td>
+				</tr>
+				<tr>
+					<td>Date of Submission:</td>
+					<td>{{ date_of_sub }}</td>
+				</tr>
+			</table>
+		</section>
+		<h4 style=";">Submitted To: </h4>
+		<section class="exp-table" style="margin: 0 auto;">
+			<table border="1" style="border-collapse: collapse;" width="80%">
+				<tr>
+					<td>Name:</td>
+					<td>{{ teachers_name }}</td>
+				</tr>
+			</table>
+		</section>
+		<!-- <h4 style="margin: 10px 10%;">Marks Distribution: </h4> -->
+		<!-- <section style="margin: 0 auto;">
+				<table border="1" style="border-collapse: collapse; margin: 0 auto;" width="80%">
+					<thead>
+						<td width="20%">Report</td>
+						<td width="20%">Viva</td>
+						<td>Comment</td>
+					</thead>
+					<tr>
+						<td height="50px">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</section> -->
+		<!-- <script src="script.js"></script> -->
+	</body>
+</html>

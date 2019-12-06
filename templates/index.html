@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+		<meta content="width=device-width,initial-scale=1" name="viewport" />
+		<meta content="description" name="description" />
+		<meta name="google" content="notranslate" />
+		<meta
+			content="Mashup templates have been developped by Orson.io team"
+			name="author"
+		/>
+
+		<!-- Disable tap highlight on IE -->
+		<meta name="msapplication-tap-highlight" content="no" />
+
+		<title>Title page</title>
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link href="./static/style.css" rel="stylesheet" />
+	</head>
+
+	<body class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 mx-auto">
+					<h3>Lab report covert page generator</h3>
+          <form action="/cover" method="post">
+            <span>Subject: </span>
+            <div class="form-group">
+              <input type="text" placeholder="subject" name="subject" />
+            </div>
+						<span>Student Info: </span>
+						<div class="form-group">
+							<input type="text" placeholder="name" name="name" />
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="id" name="id" />
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="semester" name="semester" />
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="section" name="section" />
+						</div>
+
+						<span for="">Experiment Info</span>
+						<div class="form-group">
+							<input type="text" placeholder="exp_no" name="exp_no" />
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="exp_name" name="exp_name" />
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="course_code" name="course_code" />
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="course_name" name="course_name" />
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="date_of_exp" name="date_of_exp" />
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="date_of_sub" name="date_of_sub" />
+						</div>
+						<span for="">Submitted To</span>
+						<div class="form-group">
+							<input type="text" name="teachers_name" />
+						</div>
+
+						<input class="btn btn-primary" type="submit" value="Submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
