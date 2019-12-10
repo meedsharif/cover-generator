@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- <link rel="stylesheet" href="style.css" /> -->
+		<title>Cover Page</title>
+	</head>
+	<body>
+		<style>
+			@page {
+				size: A4; /* Change from the default size of A4 */
+				margin: 2.5cm; /* Set margin on each page */
+			}
+
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			h3 {
+				font-size: 26px;
+			}
+			h4 {
+				font-size: 22px;
+			}
+
+			.assign > * {
+				margin: .5rem;
+			}
+
+			.sub_to > * {
+				margin: .5rem;
+				padding: 5px 0;
+			}
+
+			.sub_by > table {
+				margin-top: 30px;
+			}
+
+			
+
+			td {
+				padding: 5px;
+				font-size: 22px;
+			}
+			
+		</style>
+				<section class="top-sec" style="text-align: center; margin-top: 20px;">
+					<h3>International Islamic University Chittagong</h3>
+				</section>
+				<section class="assign" style="text-align: center; margin-top: 70px;">
+					<h3>Assignment</h3>
+					<h3>on</h3>
+					<h3>{{ subject }}</h3>
+				</section>
+				<h3 style="margin-top: 70px;">Submitted to - </h3>
+				<section class="sub_to" style="margin-left: 100px; margin-top: 30px; font-size: 22px;">
+					<h4>{{ teachers_name }}</h4>
+					<div>{{ teachers_title }}</div>
+					<div>{{ teachers_dept }}</div>
+				</section>
+				<h3 style="margin-top: 70px;">Submitted By - </h3>
+				<section class="sub_by" style="margin-left: 100px;">
+					<table>
+						<tr>
+							<td>Name: </td>
+							<td>{{ name }}</td>
+						</tr>
+						<tr>
+							<td>Section: </td>
+							<td>{{ section }}</td>
+						</tr>
+						<tr>
+							<td>Semester: </td>
+							<td>{{ semester }}</td>
+						</tr>
+						<tr>
+							<td>ID: </td>
+							<td>{{ id }}</td>
+						</tr>
+						<tr>
+							<td>Session: </td>
+							<td>{{ session }}</td>
+						</tr>
+					</table>
+				</section>
+	</body>
+</html>

@@ -7,13 +7,38 @@ app = Flask(__name__)
 def home():
   return render_template('index.html')
 
-@app.route('/cover', methods=['POST', 'GET'])
-def my_home():
+@app.route('/labreport')
+def labreport():
+  return render_template('coverform-lab.html')
+
+@app.route('/assignment')
+def assignment():
+  return render_template('coverform-assignment.html')
+
+@app.route('/cover-assignment', methods=['POST', 'GET'])
+def cover_assigment():
   if request.method == 'POST':
 
+    html = render_template('cover-assignment.html',
+    subject = str.upper(request.form.get('subject')), 
+    name= request.form.get('name'),
+    id = request.form.get('id'),
+    semester = request.form.get('semester'),
+    section = request.form.get('section'),
+    session = request.form.get('session'),
+    date_of_sub = request.form.get('date_of_sub'),
+    teachers_name = request.form.get('teachers_name'),
+    teachers_title = request.form.get('teachers_title'),
+    teachers_dept = request.form.get('teachers_dept')
+    )
 
+    return render_pdf(HTML(string=html))
 
-    html = render_template('cover.html',
+@app.route('/cover-lab', methods=['POST', 'GET'])
+def cover_lab():
+  if request.method == 'POST':
+
+    html = render_template('cover-lab.html',
     subject = str.upper(request.form.get('subject')), 
     name= request.form.get('name'),
     id = request.form.get('id'),
@@ -30,15 +55,6 @@ def my_home():
 
     return render_pdf(HTML(string=html))
 
-    # HTML('').write_pdf('/tmp/weasyprint-website.pdf')
-    
-    # pdf = pdfkit.from_string(rendered, False, configuration=config, options=options)
-
-    # response = make_response(pdf)
-
-    # response.headers['Content-Type'] = 'application/pdf'
-    # response.headers['Content-Dispostion'] = 'inline; filename=output.pdf'
-    # return response
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)
