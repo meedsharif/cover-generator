@@ -29,7 +29,9 @@ def cover_assigment():
     date_of_sub = request.form.get('date_of_sub'),
     teachers_name = request.form.get('teachers_name'),
     teachers_title = request.form.get('teachers_title'),
-    teachers_dept = request.form.get('teachers_dept')
+    teachers_dept = request.form.get('teachers_dept'),
+    course_code = request.form.get('course_code'),
+    course_name = request.form.get('course_name')
     )
 
     return render_pdf(HTML(string=html))

@@ -27,6 +27,10 @@
 				font-size: 22px;
 			}
 
+			h4:first-child {
+				font-size: 24px;
+			}
+
 			.assign > * {
 				margin: .5rem;
 			}
@@ -56,7 +60,19 @@
 					<h3>on</h3>
 					<h3>{{ subject }}</h3>
 				</section>
-				<h3 style="margin-top: 70px;">Submitted to - </h3>
+				<section class="sub_by" style="">
+					<table>
+						<tr>
+							<td><strong>Course Code: </strong></td>
+							<td>{{ course_code }}</td>
+						</tr>
+						<tr>
+							<td><strong>Course Title: </strong></td>
+							<td>{{ course_title }}</td>
+						</tr>
+						</table>
+					</section>	
+				<h3 style="margin-top: 30px;">Submitted to - </h3>
 				<section class="sub_to" style="margin-left: 100px; margin-top: 30px; font-size: 22px;">
 					<h4>{{ teachers_name }}</h4>
 					<div>{{ teachers_title }}</div>
